@@ -1,0 +1,60 @@
+
+
+
+@font-face {
+    font-family: "Gputeks";
+    src: url("/src/font/Gputeks-Regular.woff2") format("woff2"),
+        url("/src/font/Gputeks-Regular.woff") format("woff");
+}
+
+* {
+    font-family: "Gputeks";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    /* font-size: 2rem; */
+    font-size: calc(0.67rem + 40 * ((100dvw - 280px) / (1920 - 280)));
+}
+
+p,
+a,
+label,
+button,
+input,
+q {
+    /* font-size: 1rem; */
+    font-size: calc(0.5rem + 15 * ((100dvw - 280px) / (1920 - 280)));
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+.container{
+    padding: 80px 11% 80px 70px;
+    width: 100%;
+    height: 100%;
+}
+
+.container--register{
+    padding-left: calc(300 / 1920 * 100%);
+    padding-right: calc(300 / 1920 * 100%);
+}

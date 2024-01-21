@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Марс</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <section class="nav__left-side">
+            <a class="nav__logo" href=""><img class="nav__img" src="/src/img/logo.svg" alt=""></a>
+            <p class="nav__vertical-text">навигация</p>
+        </section>
+        <section class="nav__right-side">
+            <ul class="nav__buttons">
+                <li class="nav__button"><a class="nav__link" href="#main">о планете</a></li>
+                <li class="nav__button"><a class="nav__link" href="#conquest">об изучении</a></li>
+                <li class="nav__button"><a class="nav__link" href="#satellite">о спутниках</a></li>
+                <li class="nav__button"><a class="nav__link" href="#earth">о колонизации</a></li>
+                <li class="nav__button"><a class="nav__link" href="./src/html/register.html">регистрация</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    
+    <header class="header">
+        <section class="header__content">
+            <h1 class="header__title">MARS</h1>
+            <h2 class="header__subtitle">Это планета, а не шоколадка</h2>
+            <a class="header__button" href="">узнать больше</a>
+        </section>
+        <section class="header__background">
+            <img src="/src/img/header-planet.svg" alt="" class="header__planet">
+            <img src="/src/img/header-rocket.svg" alt="" class="header__rocket">
+        </section>
+    </header>
+
+
+    <main class="main" id="main">
+        <section class="about">
+            <section class="about__images">
+                <div class="about__alien">
+                    <img class="about__alien-body" src="/src/img/section-2-alien.svg" alt="житель марса">
+                    <img class="about__alien-eye" src="/src/img/section-2-alien-eye.svg" alt="глаз жителя марса">
+                </div>
+                <img class="about__planets" src="/src/img/section-2-planets.svg" alt="марсы">
+            </section>
+            <section class="about__content">
+                <h2 class="about__title">О планете</h2>
+                <p class="about_text">
+                    Марс - это четвертая планета от Солнца. Его масса составляет 6,39E23 kg. Атмосферное
+                    давление на марсе составляет 6.01 мбар, а уровень кислорода в ней достигает всего лишь 0,145%.
+                    Температуры достигают от -153 до +35 градусов Цельсия. Один год на Марсе равен 687 дней
+                </p>
+            </section>
+        </section>
+
+
+        <section class="conquest" id="conquest">
+            <section class="conquest__content">
+                <h2 class="conquest__title">
+                    Как люди покоряют Марс
+                </h2>
+                <p class="conquest__text">
+                    Человечество активно изучает эту <br> планету. На данный момент NASA <br> запустила уже 4 марсохода:
+                </p>
+                <ul class="conquest__rover-list">
+                    <li class="conquest__list-item">
+                        <figure class="conquest__rover">
+                            <img class="conquest__rover-img" src="/src/img/section-3-rover-1-ic.svg" alt="">
+                            <figcaption class="conquest__rover-name">
+                                Cоджорнер
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="conquest__list-item">
+                        <figure class="conquest__rover">
+                            <img class="conquest__rover-img" src="/src/img/section-3-rover-2-ic.svg" alt="">
+                            <figcaption class="conquest__rover-name">
+                                Оппортьюнити
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="conquest__list-item">
+                        <figure class="conquest__rover">
+                            <img class="conquest__rover-img" src="/src/img/section-3-rover-3-ic.svg" alt="">
+                            <figcaption class="conquest__rover-name">
+                                Кьюриосити
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="conquest__list-item">
+                        <figure class="conquest__rover">
+                            <img class="conquest__rover-img" src="/src/img/section-3-rover-4-ic.svg" alt="">
+                            <figcaption class="conquest__rover-name">
+                                Персевиранс
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="conquest__background">
+                <img class="conquest__bg-alien" src="/src/img/section-3-alien.svg" alt="">
+                <img class="conquest__bg-rover" src="/src/img/section-3-rover.svg" alt="">
+            </section>
+        </section>
+
+
+        <section class="satellite" id="satellite">
+                <h2 class="satellite__title">А еще у Марса есть спутники</h2>
+                <div class="satellite__planets">
+                    <div class="satellite__orbit">
+                        <div class="satellite__phobos">
+                            <img class="satellite__phobos-img" src="/src/img/section-4-phobos.svg" alt="" >
+                        </div>
+                        <div class="satellite__deimos">
+                            <img class="satellite__deimos-img" src="/src/img/section-4-deimos.svg" alt="" >
+                        </div>
+                        <div class="satellite__mars">
+                            <img class="satellite__mars-img" src="/src/img/section-4-mars.svg" alt="" >
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="earth" id="earth">
+            <section class="earth__background">
+                <img class="earth__background-top" src="/src/img/section-5-bg-top.svg" alt="">
+                <img class="earth__background-bottom" src="/src/img/section-5-bg-bottom-earth.svg" alt="">
+            </section>
+            <section class="earth__content">
+                <img class="earth__rocket" src="/src/img/section-5-rocket.svg" alt="">
+                <h2 class="earth__title">Возможно, однажды Марс станет второй планетой, приютившей человечество</h2>
+                <a class="earth__button" href="#">Запишись в ряды колонистов и первооткрывателей</a>
+            </section>
+        </section> 
+    </main>
+
+    <footer>
+        <section class="footer">
+            <p class="footer__text">F O O T E R</p>
+        </section>
+    </footer>
+</body>
+
+</html>
+

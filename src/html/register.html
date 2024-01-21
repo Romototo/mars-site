@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--register">
+
+            <section class="header__title">
+                <h2 class="header__text">Присоединяйся к нам: </h2>
+                <div class="header__frame">
+                    <ul class="header__proffesions">
+                        <li class="header__proffesion">Инженер</li>
+                        <li class="header__proffesion">Терраформист</li>
+                        <li class="header__proffesion">Колонист</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="header__cards swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="header__card card swiper-slide">
+                        <img class="card__image" src="../img/card-icon-1.svg" alt="">
+                        <p class="card__text">Инженер</p>
+                        <details class="card__details">
+                            <summary class="card__summary">
+                                Подробнее...
+                            </summary>
+                            Вам предстоит проектировать и анализировать всю инфраструктуру покорения марса. Участвовать
+                            в
+                            создании космических аппаратов и просчете математических закономерностей
+                        </details>
+                    </div>
+
+                    <div class="header__card card swiper-slide">
+                        <img class="card__image" src="../img/card-icon-2.svg" alt="">
+                        <p class="card__text">Колонист</p>
+                        <details class="card__details">
+                            <summary class="card__summary">
+                                Подробнее...
+                            </summary>
+                            Колонист - человек, который колонизирует Марс. Вы первые ступите на марс. Вы первые
+                            столкнетесь
+                            с
+                            препятствиями на пути к заселению. Вы первопроходцы! Спектр ваших обязанностей включает в
+                            себя
+                            все,
+                            что потребуется для заселения марса, начиная от черновых работ и заканчивая мед помощью и
+                            сельским
+                            хозяйством.
+                        </details>
+                    </div>
+
+                    <div class="header__card card swiper-slide">
+                        <img class="card__image" src="../img/card-icon-3.svg" alt="">
+                        <p class="card__text">Терраформист</p>
+                        <details class="card__details">
+                            <summary class="card__summary">
+                                Подробнее...
+                            </summary>
+                            Терраформирование - это процесс изменения окружающей среды планеты, под нужды человека. Вы
+                            архитекторы и творцы целой планеты.
+                            Вам предстоит перестроить Марс на Гео уровне и превратить его из пустыни в райский уголок,
+                            такой
+                            же
+                            как Земля.
+                        </details>
+                    </div>
+
+                    <div class="header__card card swiper-slide">
+                        <img class="card__image" src="../img/card-icon-3.svg" alt="">
+                        <p class="card__text">Терраформист</p>
+                        <details class="card__details">
+                            <summary class="card__summary">
+                                Подробнее...
+                            </summary>
+                            Терраформирование - это процесс изменения окружающей среды планеты, под нужды человека. Вы
+                            архитекторы и творцы целой планеты.
+                            Вам предстоит перестроить Марс на Гео уровне и превратить его из пустыни в райский уголок,
+                            такой
+                            же
+                            как Земля.
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="quotes">
+            <div class="container container--register">
+                <div class="quotes__header">
+                    <p class="quotes__text">
+                        Подробнее про пилотируемые полеты на марс
+                    </p>
+                    <a href="#" class="quotes__link">Нажми тут</a>
+                </div>
+
+                <ul class="quotes__main">
+                    <li class="quotes__element quote" lang="ru">
+                        <q class="quote__text">
+                            Жизнь показывает, что и космос будут осваивать не какие-нибудь супермены, а самые простые
+                            люди.
+                        </q>
+                        <p class="quote__author">
+                            Юрий Гагарин
+                        </p>
+                    </li>
+                    <li class="quotes__element quote" lang="en-us">
+                        <q class="quote__text ">
+                            That's one small step for a man, one giant leap for mankind.
+                        </q>
+                        <p class="quote__author">
+                            Neil Armstrong
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="application">
+            <div class="container container--register">
+                <form action="" class="application__form form">
+                    <header class="form__header">
+                        <h2 class="form__title">
+                            Записывайся сейчас
+                        </h2>
+                    </header>
+                    <main class="form__main">
+                        <input class="form__input" type="text" placeholder="Имя">
+                        <input class="form__input" type="text" placeholder="Возраст">
+                        <input class="form__input" type="text" placeholder="Образование и специальность">
+                        <input class="form__checkbox" type="checkbox" id="confirm">
+                        <label class="form__text" for="confirm">Cогласен на обработку персональных данных</label>
+                        <button class="form__button">Записаться</button>
+                    </main>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подключение свипер js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Подключение библиотеки Hyphenopoly -->
+    <script src="../js/Hyphenopoly/Hyphenopoly_Loader.js"></script>
+    <!-- Подключение своего скрипта -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+@import url("./animation.css");
+@import url("./base.css");
+/* менюшка навигации */
+
+.nav {
+    display: flex;
+
+    background: #3E4761;
+    color: white;
+
+    width: clamp(200px, calc(430 / 1920 * 100%), 430px);
+    height: clamp(330px, 70dvh, 920px);
+
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateX(calc(100% - (140 / 430 * 100%))) translateY(-50%);
+    z-index: 1000;
+    
+    transition: 0.3s;
+    /* aspect-ratio: 430 / 920; */
+
+    &:hover{
+        transform: translateX(0) translateY(-50%);
+    }
+}
+
+.nav__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(140 / 430 * 100%);
+    height: 100%;
+    position: relative;
+}
+
+.nav__logo {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    pointer-events: none;
+}
+
+.nav__img{
+    width: calc(78 / 140 * 100%);
+}
+
+.nav__vertical-text {
+    writing-mode: tb-rl;
+    text-orientation: upright;
+    user-select: none;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+
+.nav__right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.nav__buttons {
+    /* height: 70%; */
+    /* list-style-type: none; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    
+}
+
+.nav__button{
+    /* filter: blur(10px); */
+    transition: filter 300ms ease-in-out;
+    white-space: nowrap;
+
+    &:hover{
+        filter: blur(0px);
+    }
+}
+
+/* хеде */
+
+.header {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.header__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+}
+
+.header__title {}
+
+.header__subtitle {
+    text-shadow: 0 0 5px black;
+}
+
+.header__button {
+    width: fit-content;
+    display: inline-block;
+    margin-top: 280px;
+    padding: 20px 80px;
+    background: linear-gradient(90deg, #536AB9 0%, #3F2C8D 27.69%, #1C1477 73.96%, #536AB9 100%);
+    background-size: 300%;
+    animation:button-animation 6s linear 0s infinite;
+}
+
+.header__background {
+    background: #222735;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header__planet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header__rocket {
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+    animation: header-rocket-animation 10s ease-in-out 0s 1 both;
+}
+
+.about {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    color: white;
+    background: linear-gradient(0deg, #2B344B 0%, #212633 100%);
+    overflow: hidden;
+}
+
+.about__images {
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+
+.about__alien {
+    top: 43%;
+    left: 40%;
+    translate: -50% -50%;
+    position: absolute;
+    animation: about-alien-animation 5s ease-in-out 0s infinite alternate;
+}
+
+.about__alien-eye {
+    top: calc(69 / 197 * 100%);
+    left: calc(68 / 155 * 100%);
+    translate: -50% -50%;
+    position: absolute;
+    animation: about-eye-animation 1s ease-in-out 0s infinite alternate;
+}
+
+.about__planets {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-right: 148px;
+}
+
+.about__title {
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+
+.about_text {
+    font-weight: 500;
+}
+
+.conquest {
+    background-color: #2B344B;
+    color: white;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.conquest__content {
+    padding: 50px;
+    padding-right: 143px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.conquest__title {
+    margin-bottom: 50px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.conquest__text {
+    text-align: left;
+    width: 50%;
+    font-weight: 500;
+}
+
+.conquest__rover-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.conquest__list-item {
+    padding: 15px;
+}
+
+.conquest__rover-name {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.conquest__background {
+    position: absolute;
+    background: url("/src/img/Group\ 16.svg") bottom/100% no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.conquest__bg-rover {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    animation: conquest-rover-motion 10s linear 0s infinite both;
+}
+
+.conquest__bg-alien {
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    animation: conquest-alien-motion 10s linear 1.9s infinite both;
+}
+
+/* СПУТНИКИ */
+
+.satellite {
+    background-color: #FFB762;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.satellite__title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.satellite__planets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.satellite__orbit {
+    position: relative;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    padding: 100px;
+    border-radius: 100%;
+    animation: satellite-orbite-rotation 20s linear 0s infinite;
+    
+    & * {
+        /* position: absolute; */
+    }
+} 
+
+.satellite__mars {
+    animation: satellite-rotation 20s linear 0s infinite;
+}
+
+.satellite__mars-img {}
+
+.satellite__phobos {
+    left: -6%;
+    top: 50%;
+    position: absolute;
+    animation: satellite-rotation 20s linear 0s infinite;
+    z-index: 2;
+    
+    &::after {
+        content: "Фобос";
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        translate: -50% -50%;
+        letter-spacing: 15.6px;
+    }
+}
+
+.satellite__phobos-img {}
+
+.satellite__deimos {
+    left: 20%;
+    bottom: 0;
+    position: absolute;
+    animation: satellite-rotation 20s linear 0s infinite;
+    z-index: 2;
+    
+    &::after {
+        content: "Деймос";
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        translate: -50% -50%;
+        letter-spacing: 15.6px;
+    }
+}
+
+.satellite__deimos-img {}
+
+/* ПОЧТИ ФУТЕР */
+
+.earth {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #293246;
+}
+
+.earth__content,
+.earth__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.earth__content {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.earth__background-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.earth__title {
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    align-self: flex-start;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.earth__rocket {
+    right: 20%;
+    /* margin-right: 508px; */
+    bottom: 20px;
+    width: 8%;
+    position: absolute;
+    animation: earth-rocket-motion 12s ease-in-out infinite both;
+}
+
+.earth__button {
+    color: white;
+    position: absolute;
+    background: linear-gradient(90deg, #536AB9 0%, #3F2C8D 27.69%, #1C1477 73.96%, #536AB9 100%);
+    background-size: 300%;
+    animation: button-animation 6s linear 0s infinite;
+    justify-self: flex-end;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.63);
+    padding: 40px 30px;
+    bottom: 5vh;
+}
+
+.earth__footer {}
+
+.earth__background-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #FFB762;
+}
+
+.footer__text {
+    text-align: center;
+}
+
+
+@media screen and (max-width:1450px) {
+
+}
