@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 
     width: calc(140 / 430 * 100%);
     height: 100%;
